@@ -5,11 +5,11 @@ layout: page
 
 This widget shows a menu with options to log out from the current session, lock, reboot, suspend and power off the computer, similar to [logout-popup-widget](https://github.com/streetturtle/awesome-wm-widgets/tree/master/logout-popup-widget):
 
-![demo](../awesome-wm-widgets/assets/img/screenshots/logout-menu-widget/logout-menu.gif)
+![demo](../awesome-wm-widgets/assets/img/widgets/screenshots/logout-menu-widget/logout-menu.gif)
 
 ## Installation
 
-Clone this repo (if not cloned yet) **./.config/awesome/**
+Clone this repo (if not cloned yet) under **./.config/awesome/**
 
 ```bash
 cd ./.config/awesome/

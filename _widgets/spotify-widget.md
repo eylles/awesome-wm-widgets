@@ -3,7 +3,7 @@ layout: page
 ---
 # Spotify widget
 
-This widget displays currently playing song on [Spotify for Linux](https://www.spotify.com/download/linux/) client: ![screenshot](../awesome-wm-widgets/assets/img/screenshots/spotify-widget/spo-wid-1.png)
+This widget displays currently playing song on [Spotify for Linux](https://www.spotify.com/download/linux/) client: ![screenshot](../awesome-wm-widgets/assets/img/widgets/screenshots/spotify-widget/spo-wid-1.png)
 
 Some features:
 
@@ -37,6 +37,7 @@ It is possible to customize widget by providing a table with all or some of the 
 | `max_length` | `15` | Maximum lentgh of artist and title names. Text will be ellipsized if longer. |
 | `show_tooltip` | `true` | Show tooltip on hover with information about the playing song |
 | `timeout` | 1 | How often in seconds the widget refreshes |
+| `sp_bin` | `sp` | Path to the `sp` binary. Required if `sp` is not in environment PATH. |
 
 
 ### Example:
@@ -49,17 +50,18 @@ spotify_widget({
     dim_when_paused = true,
     dim_opacity = 0.5,
     max_length = -1,
-    show_tooltip = false
+    show_tooltip = false,
+    sp_bin = gears.filesystem.get_configuration_dir() .. 'scripts/sp'
 })
 ```
 
 Gives following widget
 
 Playing:
-![screenshot](../awesome-wm-widgets/assets/img/screenshots/spotify-widget/spotify-widget-custom-playing.png)
+![screenshot](../awesome-wm-widgets/assets/img/widgets/screenshots/spotify-widget/spotify-widget-custom-playing.png)
 
 Paused:
-![screenshot](../awesome-wm-widgets/assets/img/screenshots/spotify-widget/spotify-widget-custom-paused.png)
+![screenshot](../awesome-wm-widgets/assets/img/widgets/screenshots/spotify-widget/spotify-widget-custom-paused.png)
 
 ## Installation
 
@@ -69,7 +71,10 @@ First you need to have spotify CLI installed, it uses dbus to communicate with s
 git clone https://gist.github.com/fa6258f3ff7b17747ee3.git
 cd ./fa6258f3ff7b17747ee3 
 chmod +x sp
+# This widget will work by default if the binary is in the system PATH
 sudo cp ./sp /usr/local/bin/
+# Alternatively, you may save the binary anywhere and supply the path via this widget's sp_bin argument:
+# cp ./sp ~/.config/awesome/scripts/
 ```
 
 Then clone repo under **~/.config/awesome/** and add widget in **rc.lua**:

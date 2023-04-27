@@ -9,16 +9,16 @@ This widget is more informative version of [battery widget](https://github.com/s
 
 Depending of the battery status it could look following ways:
 
- - ![10_d](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/10_d.png) - less than 15 percent
- - ![10_c](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/10_c.png) - less than 15 percent, charging
- - ![20_d](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/20_d.png) - between 15 and 40 percent
- - ![20_c](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/20_c.png) - between 15 and 40 percent, charging
- - ![80_d](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/80_d.png) - more than 40 percent
- - ![80_c](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/80_c.png) - more than 40 percent, charging
+ - ![10_d](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/10_d.png) - less than 15 percent
+ - ![10_c](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/10_c.png) - less than 15 percent, charging
+ - ![20_d](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/20_d.png) - between 15 and 40 percent
+ - ![20_c](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/20_c.png) - between 15 and 40 percent, charging
+ - ![80_d](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/80_d.png) - more than 40 percent
+ - ![80_c](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/80_c.png) - more than 40 percent, charging
 
 If a battery level is low then warning popup will show up:
 
-![warning](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/warning.png)
+![warning](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/warning.png)
 
 ## Customization
 
@@ -42,6 +42,7 @@ It is possible to customize widget by providing a table with all or some of the 
 | `warning_msg_icon` | ~/.config/awesome/awesome-wm-widgets/batteryarc-widget/spaceman.jpg | Icon of the warning popup |
 | `enable_battery_warning` | `true` | Display low battery warning |
 | `show_notification_mode` | `on_hover` | How to trigger a notification with the battery status: `on_hover`, `on_click` or `off`  |
+| `notification_position` | `top_left` | Where to show she notification when triggered. Values: `top_right`, `top_left`, `bottom_left`, `bottom_right`, `top_middle`, `bottom_middle`. (default `top_right`) |
 
 ## Requirements
 
